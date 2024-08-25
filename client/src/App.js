@@ -14,7 +14,7 @@ function App() {
   const handleSubmit = async () => {
     try {
       const parsedJson = JSON.parse(jsonInput);
-      const res = await axios.post('http://localhost:3000/bfhl', parsedJson);
+      const res = await axios.post('https://bajaj-task-ebcv.onrender.com/bfhl', parsedJson);
       setResponse(res.data);
     } catch (error) {
       alert('Invalid JSON input or server error.');
